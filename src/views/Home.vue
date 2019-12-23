@@ -371,6 +371,7 @@ export default {
     const algoToken = env['VUE_APP_ALGO_TOKEN']
 
     if (!algoUUID || !algoToken) {
+      console.info(env)
       alert('need algo uuid and token')
       return
     }
