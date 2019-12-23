@@ -2,6 +2,7 @@
   "name": "mxgraphAPI",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://lanniu.github.io/mxgraph-api-search/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
