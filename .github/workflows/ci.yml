@@ -16,4 +16,8 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: dist
-        BUILD_SCRIPT: npm install && npm run build
+        BUILD_SCRIPT:
+          set VUE_APP_ALGO_UUID=${{ secrets.ALGO_UUID }} &&
+          set VUE_APP_ALGO_TOKEN=${{ secrets.ALGO_TOKEN }} &&
+          npm install &&
+          npm run build
