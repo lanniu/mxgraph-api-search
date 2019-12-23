@@ -366,13 +366,11 @@ export default {
     }
   },
   mounted() {
-    const env = process.env
-    const algoUUID = env['VUE_APP_ALGO_UUID']
-    const algoToken = env['VUE_APP_ALGO_TOKEN']
+    const algoUUID = process.env.VUE_APP_ALGO_UUID
+    const algoToken = process.env.VUE_APP_ALGO_TOKEN
 
     if (!algoUUID || !algoToken) {
-      console.info(env)
-      alert('need algo uuid and token')
+      console.info(process.env)
       return
     }
     this.algoClient = algoliasearch(algoUUID, algoToken)
