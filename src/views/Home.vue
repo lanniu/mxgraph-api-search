@@ -369,10 +369,7 @@ export default {
     const algoUUID = process.env.VUE_APP_ALGO_UUID
     const algoToken = process.env.VUE_APP_ALGO_TOKEN
 
-    if (!algoUUID || !algoToken) {
-      console.info(process.env)
-      return
-    }
+    console.info(process.env)
     this.algoClient = algoliasearch(algoUUID, algoToken)
     this.algoIndex = this.algoClient.initIndex(this.indexName)
   }
