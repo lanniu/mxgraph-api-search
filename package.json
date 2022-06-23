@@ -12,7 +12,7 @@
     "algoliasearch": "^3.32.1",
     "axios": "^0.18.1",
     "core-js": "^2.6.5",
-    "jsdom": "^15.0.0",
+    "jsdom": "^16.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vue-split-panel": "^1.0.4",
